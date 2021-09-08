@@ -1,0 +1,49 @@
+void main() {
+  
+  print("\tMarks in Subjects"   );
+  print("\nEach subject contains 100 marks Total");
+ 
+  int physics= 89;
+  print("\nPhysics = ${physics}");
+  
+  int chemistry = 67;
+  print("Chemistry = ${chemistry}");
+  
+  int mathematics= 89;
+  print("Mathematics = ${mathematics}");
+  
+  int urdu= 49;
+  print("Urdu = ${urdu}");
+  
+  int biology=78;
+  print("Biology = ${biology}");
+  
+  int obtainedmarks= (physics+chemistry+ mathematics+ urdu + biology);
+  print("\nObtained Marks = ${obtainedmarks}");
+  
+  print("\nTotal Marks are = 500");
+  
+    double percantage= (obtainedmarks/500)*100;
+  print("\nPercantage of Result= ${percantage}");
+ 
+  print("\nYour Grades");
+  if( percantage>=80){
+    print("You got Grade : A+ ");
+    print("You got Excellent marks and grades");
+  }
+  
+  else if(percantage>=70){
+    print("You got Grade : A");
+    print("you got Good marks and grades");
+  }
+  else if(percantage>=60){
+    print("You got Grade : B");
+    print("You Marks are average and you need to focus on your studies ");
+  }
+  else if(percantage>=50){
+    print("You got Grade : C");
+    print("Your marks are good. Please focus on your studies");
+  }
+  }
+
+	
