@@ -1,49 +1,54 @@
-void main() {
-  
-  print("\tMarks in Subjects"   );
-  print("\nEach subject contains 100 marks Total");
+ void main() {
+   
+  print("\t\t\t\t Student Marksheet");
+  print("\nStudent Name  : Hafiz Hamza Jamil");
+  print("Father Name   : Jamil Ur Rehman");
+  print("College Name  : Govt. College");
+  print("\n\t\t\t\tMarks in Subjects"   );
+
  
-  int physics= 89;
-  print("\nPhysics = ${physics}");
-  
-  int chemistry = 67;
-  print("Chemistry = ${chemistry}");
-  
-  int mathematics= 89;
-  print("Mathematics = ${mathematics}");
-  
-  int urdu= 49;
-  print("Urdu = ${urdu}");
-  
-  int biology=78;
-  print("Biology = ${biology}");
-  
-  int obtainedmarks= (physics+chemistry+ mathematics+ urdu + biology);
-  print("\nObtained Marks = ${obtainedmarks}");
-  
-  print("\nTotal Marks are = 500");
-  
-    double percantage= (obtainedmarks/500)*100;
-  print("\nPercantage of Result= ${percantage}");
+  double physics= 89;
+  double chemistry = 67;
+  double mathematics= 89;
+  double urdu= 49;
+  double biology=78;
+   
  
-  print("\nYour Grades");
-  if( percantage>=80){
-    print("You got Grade : A+ ");
+ print("\nSubjects\t\tPhysics\t\tChemistry\tMathematics\tUrdu\t\tBiology");
+ print("Obtained Marks\t\t${physics}\t\t${chemistry}\t\t${mathematics}\t\t${urdu}\t\t${biology}"); 
+ print("Total Marks\t\t100\t\t100\t\t100\t\t100\t\t100");
+  
+  
+  double obtainedmarks = (physics+chemistry+ mathematics+ urdu + biology);
+  print("\nObtained Marks    = ${obtainedmarks}");
+  print("Total Marks are   = 500");
+  
+    double percentage= (obtainedmarks/500)*100;
+  print("\nPercantage = ${percentage}");
+ 
+  if( percentage>=80){
+    print("Grade : A+ ");
     print("You got Excellent marks and grades");
   }
   
-  else if(percantage>=70){
-    print("You got Grade : A");
-    print("you got Good marks and grades");
+  else if(percentage>=70){
+    print("Grade : A");
+    print("You got Good marks and grades");
   }
-  else if(percantage>=60){
-    print("You got Grade : B");
+  else if(percentage>=60){
+    print("Grade : B");
     print("You Marks are average and you need to focus on your studies ");
   }
-  else if(percantage>=50){
-    print("You got Grade : C");
-    print("Your marks are good. Please focus on your studies");
+  else if(percentage>=50){
+    print("Grade : C");
+    print("Your marks are not good. Please focus on your studies");
   }
+   else if(percentage>=40){
+     print("Grade : D");
+     print("Your got poor marks. ");
+    }
+   else  {
+     print("You are fail ");
+   }
   }
 
-	
