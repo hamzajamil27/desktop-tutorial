@@ -1,0 +1,9 @@
+
+void main() {  
+
+var list1= [1,2,3,4,5,6,7];
+var list2 = [3,5,6,7,9,10];
+var difference = list1.where((e)=> !list2.contains(e)); 
+print(difference);
+
+}
