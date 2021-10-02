@@ -1,0 +1,11 @@
+void main() {
+  var firstInstance = ThisIsMyFirstClass();
+  firstInstance.thisIsMyFirstMethod();
+}
+
+
+class ThisIsMyFirstClass {
+  void thisIsMyFirstMethod() {
+    print("My name is Hamza, and this is my first instance method called");
+  }
+}
