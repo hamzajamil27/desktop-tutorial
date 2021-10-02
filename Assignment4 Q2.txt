@@ -1,0 +1,12 @@
+ void main() {   
+ 
+   for(var a= 1; a<=10; a++){
+     abc(a);
+   }
+}
+
+dynamic abc(a){
+     var b= 5;
+  
+  print("${b} X ${a} = ${b*a}");
+}
