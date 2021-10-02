@@ -1,0 +1,19 @@
+void main() {
+  var firstInstance = ThisIsMyFirstChildClass("hamza", 22, "BSCS");
+}
+
+
+class ThisIsMyFirstBaseClass {
+  
+  ThisIsMyFirstBaseClass() {
+    print("Base class constructor with zero params called");
+  }
+}
+
+
+class ThisIsMyFirstChildClass extends ThisIsMyFirstBaseClass {
+  
+  ThisIsMyFirstChildClass(String name, int age, String education) {
+    print("My name is ${name}, my age is ${age}, my education is ${education}");
+  }
+}
