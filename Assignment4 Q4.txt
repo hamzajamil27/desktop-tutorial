@@ -1,0 +1,17 @@
+void main() {
+      var studentName;
+      var marks;
+   percentage(studentName,marks);
+ }
+ 
+   dynamic percentage(studentName,marks){
+         
+     
+     studentName= ["Hamza", "Jamil", "Umar", "Kashif", "Mohsin"];
+      marks = [297,450,456,378,490];
+      for(var a= 0; a<studentName.length; a++){ 
+    
+          
+     print("\n ${studentName[a]} got ${marks[a]} and his percentage is = ${(marks[a]/500)*100}");
+     
+}}
