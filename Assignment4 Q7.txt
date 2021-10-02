@@ -1,0 +1,10 @@
+void main() {
+  var firstInstance = ThisIsMyFirstClass("hamza", 22, "BSCS");
+}
+
+class ThisIsMyFirstClass {
+  
+  ThisIsMyFirstClass(String name, int age, String education) {
+    print("My name is ${name}, my age is ${age}, my education is ${education}");
+  }
+}
